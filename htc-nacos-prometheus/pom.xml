@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>hippo4j-test</artifactId>
-        <groupId>com.htc</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>htc-order-service</artifactId>
+    <modelVersion>4.0.0</modelVersion>
 
-    <name>htc-order-service</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <artifactId>htc-nacos-prometheus</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -81,7 +83,7 @@
                     <dockerDirectory>${project.basedir}</dockerDirectory>
 
                     <!--指定远程 docker api地址 -->
-                    <dockerHost>http://127.0.0.1:2375</dockerHost>
+                    <!--                    <dockerHost>http://127.0.0.1:2375</dockerHost>-->
 
                     <!-- 这里是复制 jar 包到 docker 容器指定目录配置 -->
                     <resources>
@@ -97,4 +99,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

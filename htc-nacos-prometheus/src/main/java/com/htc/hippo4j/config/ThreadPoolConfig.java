@@ -1,4 +1,4 @@
-package com.htc.order.config;
+package com.htc.hippo4j.config;
 
 import cn.hippo4j.core.executor.DynamicThreadPool;
 import cn.hippo4j.core.executor.support.ThreadPoolBuilder;

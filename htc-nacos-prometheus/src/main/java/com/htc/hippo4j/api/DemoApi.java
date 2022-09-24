@@ -1,4 +1,4 @@
-package com.htc.order.api;
+package com.htc.hippo4j.api;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,9 +11,9 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @author hutingcong
  * date 2022-09-23
  */
-@RequestMapping("/order")
+@RequestMapping("/demo")
 @RestController
-public class OrderApi {
+public class DemoApi {
 
     @Resource
     private ThreadPoolExecutor messageConsumeDynamicExecutor;
