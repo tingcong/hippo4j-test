@@ -24,7 +24,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spring.cloud-version>2021.0.4</spring.cloud-version>
         <spring.cloud.alibaba>2021.0.1.0</spring.cloud.alibaba>
-        <hutool-all.version>4.3.1</hutool-all.version>
+        <hutool-all.version>5.4.7</hutool-all.version>
         <!--设置时间戳-->
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <!--设置docker image 前缀-->
